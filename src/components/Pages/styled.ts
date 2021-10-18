@@ -8,6 +8,7 @@ export const Title = styled(TextStyled)`
   font-weight: normal;
   font-size: 80px;
   text-align: center;
+  z-index: 1;
 `;
 
 export const Page1Wrapper = styled.div`
