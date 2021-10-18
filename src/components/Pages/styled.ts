@@ -22,15 +22,22 @@ export const Page2Wrapper = styled.div`
   display: flex;
   flex: 1;
   height: 100%;
-  justify-content: end;
   align-items: center;
+  
+  @media ${device.mobileS} {
+    justify-content: end;
+  }
+  
+  @media ${device.tablet} {
+    justify-content: center;
+  }
 `;
 
 export const Page3Wrapper = styled.div`
   display: flex;
   flex: 1;
   height: 100%;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 
   @media ${device.mobileS} {
@@ -41,6 +48,7 @@ export const Page3Wrapper = styled.div`
 
   @media ${device.tablet} {
     flex-direction: row;
+    margin: 40px;
   }
 `;
 
@@ -72,6 +80,11 @@ export const Page2Container = styled.div`
 
 export const MapStyled = styled.iframe`
   @media ${device.mobileS} {
+    width: 250px;
+    height: 250px;
+  }
+  
+  @media ${device.mobileM} {
     width: 320px;
     height: 400px;
   }
