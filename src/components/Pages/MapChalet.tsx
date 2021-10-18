@@ -39,8 +39,6 @@ export const MapChalet = () => {
       </a>
       <MapStyled
         src="https://yandex.ru/map-widget/v1/-/CCUqZUsa0D"
-        frameborder="1"
-        allowfullscreen="true"
         style={{ position: "relative" }}
       ></MapStyled>
     </div>

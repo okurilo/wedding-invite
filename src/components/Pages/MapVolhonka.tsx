@@ -29,9 +29,6 @@ export const MapVolhonka = () => {
       <MapStyled
         title="maps"
         src="https://yandex.ru/map-widget/v1/-/CCUqZUGrXB"
-        // frameborder="1"
-        allowfullscreen="true"
-        style={{ position: "relative" }}
       ></MapStyled>
     </div>
   );
