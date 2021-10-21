@@ -16,14 +16,22 @@ export const Title = styled(TextStyled)`
   }
   
   @media ${device.tablet} {
-    font-size: 140px;
+    font-size: 150px;
+  }
+  
+  @media ${device.laptop} {
+    font-size: 200px;
+  }
+  
+  @media ${device.laptopL} {
+    font-size: 350px;
   }
 `;
 
 export const Page1Wrapper = styled.div`
   display: flex;
   flex: 1;
-  height: 40%;
+  height: 35%;
   justify-content: center;
   align-items: center;
 `;
