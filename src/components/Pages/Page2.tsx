@@ -15,7 +15,7 @@ export const Page2: React.FC = () => {
         <Text fontSize="32px" paddingBottom="2px">
           -13:30-
         </Text>
-        <Text fontSize="32px" paddingBottom="18px">
+        <Text fontSize="20px" paddingBottom="18px">
           начало церемонии
         </Text>
         <Text fontSize="32px" paddingBottom="2px">

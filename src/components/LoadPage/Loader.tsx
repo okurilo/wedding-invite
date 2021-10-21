@@ -9,7 +9,7 @@ export const Loader = () => (
         <div></div>
         <div></div>
       </LdsRing>
-      <LoaderText>Загрузка</LoaderText>
+      {/* <LoaderText>Loading</LoaderText> */}
     </div>
   </LoaderStyled>
 );

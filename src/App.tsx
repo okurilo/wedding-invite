@@ -35,7 +35,7 @@ export const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
   }, []);
 
   console.log("Loader state: ", loading);

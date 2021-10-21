@@ -9,12 +9,21 @@ export const Title = styled(TextStyled)`
   font-size: 80px;
   text-align: center;
   z-index: 1;
+  color: #FFF;
+
+  @media ${device.mobileS} {
+    font-size: 80px;
+  }
+  
+  @media ${device.tablet} {
+    font-size: 140px;
+  }
 `;
 
 export const Page1Wrapper = styled.div`
   display: flex;
   flex: 1;
-  height: 30%;
+  height: 40%;
   justify-content: center;
   align-items: center;
 `;
