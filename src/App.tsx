@@ -32,7 +32,6 @@ const pages = [
 export const App = () => {
   const [loading, setLoading] = useState(true);
 
-
   return (
     <AppStyled>
       {loading && <LoadPage />}
