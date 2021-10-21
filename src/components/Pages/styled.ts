@@ -6,13 +6,12 @@ export const Title = styled(TextStyled)`
   font-family: Rouge Script;
   font-style: normal;
   font-weight: normal;
-  font-size: 80px;
   text-align: center;
   z-index: 1;
   color: #FFF;
 
   @media ${device.mobileS} {
-    font-size: 80px;
+    font-size: 60px;
   }
   
   @media ${device.tablet} {
@@ -24,14 +23,14 @@ export const Title = styled(TextStyled)`
   }
   
   @media ${device.laptopL} {
-    font-size: 350px;
+    font-size: 200px;
   }
 `;
 
 export const Page1Wrapper = styled.div`
   display: flex;
   flex: 1;
-  height: 35%;
+  height: 25%;
   justify-content: center;
   align-items: center;
 `;

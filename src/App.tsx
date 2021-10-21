@@ -32,19 +32,12 @@ const pages = [
 export const App = () => {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2500);
-  }, []);
-
-  console.log("Loader state: ", loading);
 
   return (
     <AppStyled>
       {loading && <LoadPage />}
       {pages.map((page, index) => (
-        <Page key={index} index={index} page={page}></Page>
+        <Page setLoading={setLoading} key={index} index={index} page={page}></Page>
       ))}
     </AppStyled>
   );
