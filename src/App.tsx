@@ -7,8 +7,9 @@ import Image1 from "./images/image1.png";
 import Image2 from "./images/image2.png";
 import Image3 from "./images/image3.png";
 import Image4 from "./images/image4.png";
+import Image5 from "./images/image5.png";
 
-import { Page1, Page2, Page3, Page4 } from "./components/Pages";
+import { Page1, Page2, Page3, Page4, Page5 } from "./components/Pages";
 
 const pages = [
   {
@@ -26,6 +27,10 @@ const pages = [
   {
     img: Image4,
     content: <Page4 />
+  },
+  {
+    img: Image5,
+    content: <Page5 />
   }
 ];
 

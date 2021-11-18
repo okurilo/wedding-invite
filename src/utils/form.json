@@ -1,0 +1,70 @@
+{
+    "fvv": 1,
+    "pageHistory": 0,
+    "fbzx": "3711637981272871666",
+    "action": "e/1FAIpQLSfW_d0XhPjPI-MpvgjeJiy2HY1dxE6TuhiYJdsGnuom_IsNnQ",
+    "fields": [
+        {
+            "label": "Ваше имя ",
+            "type": "SHORT_ANSWER",
+            "id": "929664963",
+            "required": false
+        },
+        {
+            "label": "Просим Вас выбрать салат. Остальные блюда можно будет выбрать непосредственно в ресторане. ",
+            "type": "CHECKBOX",
+            "id": "329462997",
+            "options": [
+                {
+                    "label": "Салат с лососем",
+                    "custom": false
+                },
+                {
+                    "label": "Салат из печени фермерского цыпленка с малиновым соусом",
+                    "custom": false
+                },
+                {
+                    "label": "Салат с сочным ростбифом",
+                    "custom": false
+                },
+                {
+                    "label": "Тёплый салат из хрустящих баклажанов",
+                    "custom": false
+                },
+                {
+                    "label": "Овощной салат с яйцом пашот",
+                    "custom": false
+                },
+                {
+                    "label": "Оливье с бужениной",
+                    "custom": false
+                },
+                {
+                    "label": "Оливье с языком",
+                    "custom": false
+                },
+                {
+                    "label": "Оливье с креветками",
+                    "custom": false
+                },
+                {
+                    "label": "Цезарь с курицей",
+                    "custom": false
+                },
+                {
+                    "label": "Мимоза с запеченным лососем",
+                    "custom": false
+                },
+                {
+                    "label": "Чука",
+                    "custom": false
+                }
+            ],
+            "required": true
+        }
+    ],
+    "fieldsOrder": {
+        "329462997": 1,
+        "929664963": 0
+    }
+}

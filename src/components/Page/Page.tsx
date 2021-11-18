@@ -7,7 +7,7 @@ import { parseImgPath } from "./utils";
 const IMAGE_LAST_NAME = 'image4';
 
 export const Page: React.FC<{
-  page: { img: string; content: JSX.Element };
+  page: { img?: string; content: JSX.Element };
   index: number;
   setLoading: Function
 }> = ({ page, index, setLoading }) => {

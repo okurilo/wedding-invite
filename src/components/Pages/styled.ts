@@ -111,3 +111,9 @@ export const MapStyled = styled.iframe`
     height: 400px;
   }
 `;
+
+export const Form = styled.form`
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 0;
+`
