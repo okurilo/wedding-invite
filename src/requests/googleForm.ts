@@ -21,6 +21,6 @@ export const submitToGoogleForms = async (data: any, form: GoogleForm) => {
         'Access-Control-Allow-Origin': '*'
         },
         mode: 'no-cors',
-        body: `${entriesArr.join('&')}&fvv=${form.fvv}&fbzx=${form.fbzx}`
+        body: encodeURIComponent(`${entriesArr.join('&')}&fvv=${form.fvv}&fbzx=${form.fbzx}`)
     });
 };
