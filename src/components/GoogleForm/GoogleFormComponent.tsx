@@ -13,6 +13,7 @@ import DropdownInput from './Inputs/DropdownInput'
 import LinearGrid from './Inputs/LinearGrid'
 import { Button } from '../Button'
 import { device } from '../../utils'
+import { submitToGoogleForms } from '../../requests/googleForm'
 
 const Form = styled.form`
   max-width: 250px;
@@ -92,7 +93,7 @@ export const GoogleFormComponent: React.FC<{form: GoogleForm}> = ({ form }) => {
   const methods = useGoogleForm({ form })
 
   const onSubmit = async (data: any) => {
-    await methods.submitToGoogleForms(data)
+    await submitToGoogleForms(data, form);
     alert('Данные успешно отправлены, спасибо!')
   }
 
