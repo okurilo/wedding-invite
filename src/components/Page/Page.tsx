@@ -21,7 +21,7 @@ export const Page: React.FC<{
           }
       }}>
       <WrapperPage>{page.content}</WrapperPage>
-      {index !== 3 && <Divider />}
+      {index !== 4 && <Divider />}
     </Parallax>
   );
 };

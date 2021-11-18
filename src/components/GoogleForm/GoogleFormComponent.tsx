@@ -12,11 +12,22 @@ import CheckboxGridInput from './Inputs/CheckboxGridInput'
 import DropdownInput from './Inputs/DropdownInput'
 import LinearGrid from './Inputs/LinearGrid'
 import { Button } from '../Button'
+import { device } from '../../utils'
 
 const Form = styled.form`
-  max-width: 600px;
+  max-width: 250px;
   margin: 0 auto;
   padding: 50px 0;
+  
+  @media ${device.tablet} {
+    max-width: 600px;
+  }
+`
+
+const ScrollContainer = styled.div`
+  height: 200px;
+  margin: 0em;
+  overflow-y: auto;
 `
 
 const QuestionContainer = styled.div`
@@ -69,7 +80,7 @@ const Questions: React.FC<{form: GoogleForm}> = ({ form }) => {
         return (
           <QuestionContainer key={id}>
             <QuestionLabel>{field.label}</QuestionLabel>
-            {questionInput}
+            {field.type === "CHECKBOX" ? <ScrollContainer>{questionInput}</ScrollContainer> : questionInput}
           </QuestionContainer>
         )
       })}
