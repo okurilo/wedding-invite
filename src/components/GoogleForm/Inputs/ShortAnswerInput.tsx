@@ -33,7 +33,7 @@ export default function ShortAnswerInput({ id }: { id: string }) {
 
   return (
     <div>
-      <InputStyled type='text' {...register()} />
+      <InputStyled type='text' {...register()} name={`entry.${id.split('-')[0]}`} />
     </div>
   )
 }

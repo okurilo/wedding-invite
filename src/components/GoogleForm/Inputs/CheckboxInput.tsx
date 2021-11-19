@@ -65,7 +65,7 @@ export default function CheckboxInput({ id }: { id: string }) {
     <Container>
       {options.map((o) => (
         <CheckboxContainer key={o.id}>
-          <input type='checkbox' id={o.id} {...o.registerOption()} />
+          <input type='checkbox' id={o.id}  {...o.registerOption()} name={`entry.${o.id.split('-')[0]}`} />
           <label htmlFor={o.id}>{o.label}</label>
         </CheckboxContainer>
       ))}
@@ -75,14 +75,9 @@ export default function CheckboxInput({ id }: { id: string }) {
             type='checkbox'
             id={customOption.id}
             {...customOption.registerOption()}
+            name={`entry.${customOption.id.split('-')[0]}`} 
           />
           <label htmlFor={customOption.id}>Outra</label>
-          <input
-            type='text'
-            placeholder='Resposta aqui'
-          />
-          <span
-            {...customOption.registerCustomInput()}></span>
         </CheckboxContainer>
       )}
     </Container>

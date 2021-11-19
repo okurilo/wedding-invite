@@ -92,16 +92,9 @@ const Questions: React.FC<{form: GoogleForm}> = ({ form }) => {
 export const GoogleFormComponent: React.FC<{form: GoogleForm}> = ({ form }) => {
   const methods = useGoogleForm({ form })
 
-  const onSubmit = async (data: any) => {
-    await submitToGoogleForms(data, form);
-    alert('Данные успешно отправлены, спасибо!')
-  }
-
-  console.error('Извините, произошла ошибка. Попробуйте ещё.', methods.formState.errors)
-
   return (
     <GoogleFormProvider {...methods}>
-      <Form onSubmit={methods.handleSubmit(onSubmit)}>
+      <Form action={`https://docs.google.com/forms/u/0/d/${form.action}/formResponse`}>
         <Questions form={form} />
         
         <Button type='submit'>Отправить</Button>
